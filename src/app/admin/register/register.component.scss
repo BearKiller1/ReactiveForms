@@ -1,0 +1,33 @@
+@import "~src/assets/scss/library.scss";
+
+form{
+    @include flex();
+    border: 2px solid $green;
+    flex-direction: column;
+    width:30%;
+    height: 70vh;   
+    margin:9vh 35%;
+    border-radius: 22px;
+    background-color: #f8f8f8;
+    transition: 0.5s;
+    input{
+        width: 80%;
+        height: 5vh;
+        border-radius: 10px;
+        border: 1px solid $green;
+        outline: 0;
+    }
+    button{
+        width: 60%;
+        height: 7vh;
+        background-color: $green;
+        border:0;
+        border-radius: 22px;
+        outline: 0;
+        font-size: 2.7vw;
+    }
+    &:hover{
+        box-shadow: 1px 0px 39px 1px rgba(0,0,0,0.66); 
+        transition: 0.5s;
+    }
+}
